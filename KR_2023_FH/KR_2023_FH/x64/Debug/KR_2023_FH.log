@@ -1,0 +1,48 @@
+﻿  KR_2023_FH.cpp
+C:\Users\Konstantin\source\repos\KR_2023_FH\KR_2023_FH\KR_2023_FH.cpp(25,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\Konstantin\source\repos\KR_2023_FH\KR_2023_FH\KR_2023_FH.cpp(75,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\Konstantin\source\repos\KR_2023_FH\KR_2023_FH\KR_2023_FH.cpp(148,12): warning C4101: k: неиспользованная локальная переменная
+C:\Users\Konstantin\source\repos\KR_2023_FH\KR_2023_FH\KR_2023_FH.cpp(231,34): warning C4101: k: неиспользованная локальная переменная
+C:\Users\Konstantin\source\repos\KR_2023_FH\KR_2023_FH\KR_2023_FH.cpp(231,15): warning C4101: j: неиспользованная локальная переменная
+C:\Users\Konstantin\source\repos\KR_2023_FH\KR_2023_FH\KR_2023_FH.cpp(231,12): warning C4101: i: неиспользованная локальная переменная
+D:\VS community 2023\VC\Tools\MSVC\14.35.32215\include\utility(200,16): warning C4244: инициализация: преобразование "_Ty" в "_Ty1", возможна потеря данных
+          with
+          [
+              _Ty=double
+          ]
+          and
+          [
+              _Ty1=int
+          ]
+C:\Users\Konstantin\source\repos\KR_2023_FH\KR_2023_FH\KR_2023_FH.cpp(40,39): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::pair<int,int>::pair<double,double,0>(std::pair<double,double> &&) noexcept"
+C:\Users\Konstantin\source\repos\KR_2023_FH\KR_2023_FH\KR_2023_FH.cpp(40,23): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::pair<int,int>::pair<double,double,0>(std::pair<double,double> &&) noexcept"
+D:\VS community 2023\VC\Tools\MSVC\14.35.32215\include\utility(200,61): warning C4244: инициализация: преобразование "_Ty" в "_Ty2", возможна потеря данных
+          with
+          [
+              _Ty=double
+          ]
+          and
+          [
+              _Ty2=int
+          ]
+D:\VS community 2023\VC\Tools\MSVC\14.35.32215\include\type_traits(1574,98): warning C4244: аргумент: преобразование "unsigned __int64" в "int", возможна потеря данных
+D:\VS community 2023\VC\Tools\MSVC\14.35.32215\include\thread(51): message : выполняется компиляция ссылки на экземпляр шаблон функции "void std::invoke<void(__cdecl *)(std::vector<std::vector<std::vector<int,std::allocator<int>>,std::allocator<std::vector<int,std::allocator<int>>>>,std::allocator<std::vector<std::vector<int,std::allocator<int>>,std::allocator<std::vector<int,std::allocator<int>>>>>>,int,int,std::vector<std::vector<int,std::allocator<int>>,std::allocator<std::vector<int,std::allocator<int>>>> *),std::vector<std::vector<std::vector<int,std::allocator<int>>,std::allocator<std::vector<int,std::allocator<int>>>>,std::allocator<std::vector<std::vector<int,std::allocator<int>>,std::allocator<std::vector<int,std::allocator<int>>>>>>,int,unsigned __int64,std::vector<std::vector<int,std::allocator<int>>,std::allocator<std::vector<int,std::allocator<int>>>>*>(_Callable &&,_Ty1 &&,int &&,unsigned __int64 &&,std::vector<std::vector<int,std::allocator<int>>,std::allocator<std::vector<int,std::allocator<int>>>> *&&) noexcept(false)"
+          with
+          [
+              _Callable=void (__cdecl *)(std::vector<std::vector<std::vector<int,std::allocator<int>>,std::allocator<std::vector<int,std::allocator<int>>>>,std::allocator<std::vector<std::vector<int,std::allocator<int>>,std::allocator<std::vector<int,std::allocator<int>>>>>>,int,int,std::vector<std::vector<int,std::allocator<int>>,std::allocator<std::vector<int,std::allocator<int>>>> *),
+              _Ty1=std::vector<std::vector<std::vector<int,std::allocator<int>>,std::allocator<std::vector<int,std::allocator<int>>>>,std::allocator<std::vector<std::vector<int,std::allocator<int>>,std::allocator<std::vector<int,std::allocator<int>>>>>>
+          ]
+D:\VS community 2023\VC\Tools\MSVC\14.35.32215\include\thread(61): message : выполняется компиляция ссылки на экземпляр шаблон функции "unsigned int std::thread::_Invoke<_Tuple,0,1,2,3,4>(void *) noexcept"
+D:\VS community 2023\VC\Tools\MSVC\14.35.32215\include\thread(68): message : выполняется компиляция ссылки на экземпляр шаблон функции "unsigned int (__cdecl *std::thread::_Get_invoke<_Tuple,0,1,2,3,4>(std::integer_sequence<size_t,0,1,2,3,4>) noexcept)(void *)"
+D:\VS community 2023\VC\Tools\MSVC\14.35.32215\include\thread(87): message : выполняется компиляция ссылки на экземпляр шаблон функции "void std::thread::_Start<void(__cdecl &)(std::vector<std::vector<std::vector<int,std::allocator<int>>,std::allocator<std::vector<int,std::allocator<int>>>>,std::allocator<std::vector<std::vector<int,std::allocator<int>>,std::allocator<std::vector<int,std::allocator<int>>>>>>,int,int,std::vector<std::vector<int,std::allocator<int>>,std::allocator<std::vector<int,std::allocator<int>>>> *),std::vector<std::vector<std::vector<int,std::allocator<int>>,std::allocator<std::vector<int,std::allocator<int>>>>,std::allocator<std::vector<std::vector<int,std::allocator<int>>,std::allocator<std::vector<int,std::allocator<int>>>>>>&,_Ty,unsigned __int64,std::vector<std::vector<_Ty,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>*>(_Fn,std::vector<std::vector<std::vector<_Ty,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>,std::allocator<std::vector<std::vector<_Ty,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>>> &,_Ty &&,unsigned __int64 &&,std::vector<std::vector<_Ty,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>> *&&)"
+          with
+          [
+              _Ty=int,
+              _Fn=void (__cdecl &)(std::vector<std::vector<std::vector<int,std::allocator<int>>,std::allocator<std::vector<int,std::allocator<int>>>>,std::allocator<std::vector<std::vector<int,std::allocator<int>>,std::allocator<std::vector<int,std::allocator<int>>>>>>,int,int,std::vector<std::vector<int,std::allocator<int>>,std::allocator<std::vector<int,std::allocator<int>>>> *)
+          ]
+C:\Users\Konstantin\source\repos\KR_2023_FH\KR_2023_FH\KR_2023_FH.cpp(210,97): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::thread::thread<void(__cdecl &)(std::vector<std::vector<std::vector<int,std::allocator<int>>,std::allocator<std::vector<int,std::allocator<int>>>>,std::allocator<std::vector<std::vector<int,std::allocator<int>>,std::allocator<std::vector<int,std::allocator<int>>>>>>,int,int,std::vector<std::vector<int,std::allocator<int>>,std::allocator<std::vector<int,std::allocator<int>>>> *),std::vector<std::vector<std::vector<int,std::allocator<int>>,std::allocator<std::vector<int,std::allocator<int>>>>,std::allocator<std::vector<std::vector<int,std::allocator<int>>,std::allocator<std::vector<int,std::allocator<int>>>>>>&,int,unsigned __int64,std::vector<std::vector<int,std::allocator<int>>,std::allocator<std::vector<int,std::allocator<int>>>>*,0>(_Fn,std::vector<std::vector<std::vector<int,std::allocator<int>>,std::allocator<std::vector<int,std::allocator<int>>>>,std::allocator<std::vector<std::vector<int,std::allocator<int>>,std::allocator<std::vector<int,std::allocator<int>>>>>> &,int &&,unsigned __int64 &&,std::vector<std::vector<int,std::allocator<int>>,std::allocator<std::vector<int,std::allocator<int>>>> *&&)"
+          with
+          [
+              _Fn=void (__cdecl &)(std::vector<std::vector<std::vector<int,std::allocator<int>>,std::allocator<std::vector<int,std::allocator<int>>>>,std::allocator<std::vector<std::vector<int,std::allocator<int>>,std::allocator<std::vector<int,std::allocator<int>>>>>>,int,int,std::vector<std::vector<int,std::allocator<int>>,std::allocator<std::vector<int,std::allocator<int>>>> *)
+          ]
+  KR_2023_FH.vcxproj -> C:\Users\Konstantin\source\repos\KR_2023_FH\x64\Debug\KR_2023_FH.exe
