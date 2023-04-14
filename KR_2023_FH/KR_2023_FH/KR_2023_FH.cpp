@@ -1,11 +1,11 @@
-﻿#include <iostream>
+#include <iostream>
 #include <vector>
 #include <mutex>
 #include <chrono>
 
 using namespace std;
 
-int CapacityOfGraph = 1000, Radius = 100;
+int CapacityOfGraph = 1000, Radius = 250;
 mutex m;
 
 void PrintGraph(vector<vector<int>> Graph)
@@ -128,7 +128,6 @@ void AlgShtorVagner(vector<vector<int>> Graph, vector<int>* MincutVector)
 		if (WeightsWithA[CurrentVertex] < mincut)
 			mincut = WeightsWithA[CurrentVertex];
 
-
 		//Обработаем соединение вершин:
 		for (k = 0; k < Graph.size(); k++)
 			Graph[PrevVertex][k] = Graph[k][PrevVertex] += Graph[CurrentVertex][k];
@@ -156,16 +155,14 @@ void ConnectifityFunction(vector<vector<int>> Graph, vector<vector<int>>* Mincut
 		DamagedGraph.erase(DamagedGraph.begin() + i);
 		for (j = 0; j < DamagedGraph.size(); j++)
 			DamagedGraph[j].erase(DamagedGraph[j].begin() + i);
-
 		//Посчитаем связность
 		AlgShtorVagner(DamagedGraph, &MinCut);
-
-
+		DamagedGraph.clear();
 	}
 
 	//Поскольку они отсутствуют, сразу избавимся от них:
-	MinCut[1] = MinCut[0];
-	MinCut[MinCut.size() - 1] = MinCut[0];
+	//MinCut[1] = MinCut[0];
+	//MinCut[MinCut.size() - 1] = MinCut[0];
 
 	for (i = 0; i < MinCut.size(); i++)
 		if (i != 0) MinCut[i] = MinCut[0] - MinCut[i];
@@ -175,8 +172,17 @@ void ConnectifityFunction(vector<vector<int>> Graph, vector<vector<int>>* Mincut
 	CorrectmincutData.resize(MinCut.size());
 	CorrectmincutData[0] = MinCut[0];
 	i = 1;
+
 	while (MinCut[0] > 0)
 	{
+		/*
+		cout << "В итерации " << i << " минкат выглядит как:" << endl;
+
+		for (j = 0; j < MinCut.size(); j++)
+			cout << MinCut[j] << " ";
+		cout << endl;
+		*/
+
 		int max = -INT_MAX, NumOfVertex;
 		for (j = 1; j < MinCut.size(); j++)
 			if (MinCut[j] > max)
@@ -189,6 +195,7 @@ void ConnectifityFunction(vector<vector<int>> Graph, vector<vector<int>>* Mincut
 		CorrectmincutData[i] = MinCut[0];
 		i++;
 	}
+
 	MincutVector->push_back(CorrectmincutData);
 }
 
@@ -198,7 +205,7 @@ void ParallelHelper(vector<vector<vector<int>>> MassiveOfGraphs, int Start, int 
 	for (i = Start; i < End; i++)
 	{
 		ConnectifityFunction(MassiveOfGraphs[i], MincutVector);
-		cout << i<<endl;
+		cout << i << endl;
 	}
 }
 
@@ -214,7 +221,7 @@ void MassiveSWAlgorithm(vector<vector<vector<int>>> MassiveOfGraphs)
 	double summ = 0;
 	for (int i = 0; i < MassiveOfGraphs.size(); i++)
 	{
-			for (int j = 0; j < MincutOfGraphsVector.size(); j++)
+		for (int j = 0; j < MincutOfGraphsVector.size(); j++)
 			summ += MincutOfGraphsVector[j][i];
 		cout << "Для количества удалённых вершин " << i << " Среднее количество удаляемых рёбер:" << summ / MassiveOfGraphs.size() << endl;
 		summ = 0;
